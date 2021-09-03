@@ -1,0 +1,40 @@
+.primary-button {
+    @include flex-center;
+    width: 122px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    background: $brand-color-one;
+    box-shadow: 4px 8px 32px rgba(135, 96, 255, 0.45);
+    cursor: pointer;
+
+    &:hover {
+        background: #4A358C;
+        color: $white;
+    }
+}
+
+.secondary-button {
+    @include flex-center;
+    width: max-content;
+    margin-left: auto;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid $brand-color-one;
+    color: $brand-color-one;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        color: $brand-color-one;
+    }
+}
+
+.back-button:before {
+    content: url('/src/assets/back_button.png');
+    display: block;
+    margin: 0 5px -5px 0;
+}
